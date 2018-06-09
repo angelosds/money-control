@@ -18,11 +18,19 @@ module.exports = {
         ],
       },
       {
-        test: /\.styl$/,
+        test: /\.scss$/,
         use: [
           'vue-style-loader',
           'css-loader',
-          'stylus-loader'
+          'sass-loader'
+        ]
+      },
+      {
+        test: /\.sass$/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          'sass-loader'
         ]
       },
       {
@@ -30,10 +38,10 @@ module.exports = {
         loader: 'vue-loader',
         options: {
           loaders: {
-            'stylus': [
+            'scss': [
               'vue-style-loader',
               'css-loader',
-              'stylus-loader'
+              'sass-loader'
             ]
           }
         }

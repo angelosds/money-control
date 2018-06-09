@@ -46,9 +46,10 @@
   }
 </script>
 
-<style lang="stylus">
-  $color = #41b883
+<style lang="scss">
+  $color: #41b883;
 
-  body
-    color $color
+  body {
+    color: $color;
+  }
 </style>
