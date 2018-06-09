@@ -18,30 +18,19 @@ module.exports = {
         ],
       },
       {
-        test: /\.scss$/,
-        use: [
-          'vue-style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
-      },
-      {
-        test: /\.sass$/,
-        use: [
-          'vue-style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
-      },
-      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
           loaders: {
             'scss': [
-              'vue-style-loader',
-              'css-loader',
-              'sass-loader'
+              { loader: 'vue-style-loader' },
+              { loader: 'css-loader' },
+              {
+                loader: 'sass-loader' ,
+                options: {
+                  includePaths: ['./node_modules']
+                }
+              }
             ]
           }
         }
