@@ -17,6 +17,8 @@
     }
   },
   "dependencies": {
+    "@material/button": "^0.36.0",
+    "@material/top-app-bar": "^0.36.0",
     "vue": "^2.5.11"
   },
   "browserslist": [
