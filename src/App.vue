@@ -33,6 +33,12 @@
   @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
   @import url("https://necolas.github.io/normalize.css/8.0.0/normalize.css");
 
+  $mdc-theme-primary: #525562;
+  $mdc-theme-secondary: #ffde52;
+  $mdc-theme-on-primary: #442b2d;
+  $mdc-theme-on-secondary: #442b2d;
+
+
   @import "@material/button/mdc-button";
   @import "@material/top-app-bar/mdc-top-app-bar";
 </style>
