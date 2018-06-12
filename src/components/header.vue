@@ -1,5 +1,5 @@
 <template>
-  <header class="mdc-top-app-bar">
+  <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
         <a
@@ -22,8 +22,7 @@ export default {
     }
   },
   mounted () {
-    const topAppBarElement = this.$el;
-    const topAppBar = new MDCTopAppBar(topAppBarElement);
+    const topAppBar = new MDCTopAppBar(this.$el);
   }
 }
 </script>
@@ -31,4 +30,8 @@ export default {
 <style lang="scss">
   @import 'colors.scss';
   @import "@material/top-app-bar/mdc-top-app-bar";
+
+  body {
+    margin-bottom: 2000px;
+  }
 </style>
