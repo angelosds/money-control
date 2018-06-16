@@ -1,4 +1,4 @@
-# Money control
+# My coins
 
 > An progressive web app to manage your money
 
