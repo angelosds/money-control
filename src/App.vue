@@ -18,6 +18,6 @@
   }
 </script>
 
-<style lang="scss">
-  @import './src/style/base.scss';
+<style lang="styl">
+  @import 'base.styl';
 </style>

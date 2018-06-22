@@ -22,13 +22,13 @@ module.exports = {
         loader: 'vue-loader',
         options: {
           loaders: {
-            'scss': [
+            'styl': [
               { loader: 'vue-style-loader' },
               { loader: 'css-loader' },
               {
-                loader: 'sass-loader' ,
+                loader: 'stylus-loader' ,
                 options: {
-                  includePaths: ['./node_modules', './src/style/tools']
+                  paths: ['./node_modules', './src/style', './src/style/tools']
                 }
               }
             ]

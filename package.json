@@ -35,6 +35,8 @@
     "eslint-plugin-vue": "^4.5.0",
     "file-loader": "^1.1.4",
     "husky": "^1.0.0-rc.8",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",

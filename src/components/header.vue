@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import { MDCTopAppBar } from '@material/top-app-bar/index';
 
 export default {
   props: {
@@ -20,18 +19,10 @@ export default {
       type: String,
       required: true
     }
-  },
-  mounted () {
-    const topAppBar = new MDCTopAppBar(this.$el);
   }
 }
 </script>
 
-<style lang="scss">
-  @import 'colors.scss';
-  @import "@material/top-app-bar/mdc-top-app-bar";
+<style lang="styl">
 
-  body {
-    margin-bottom: 2000px;
-  }
 </style>
