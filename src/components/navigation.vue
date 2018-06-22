@@ -19,16 +19,7 @@
         <a
           href="#"
           class="nav-link -action">
-          <svg
-            class="icon"
-            x="0px"
-            y="0px"
-            viewBox="0 0 24 24"
-            enable-background="new 0 0 24 24">
-            <g class="line">
-	            <path d="M19,13h-6v6h-2v-6H5v-2h6V5h2v6h6V13z"/>
-            </g>
-          </svg>
+          A
         </a>
       </li>
       <li class="item">
