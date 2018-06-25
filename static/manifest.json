@@ -5,5 +5,12 @@
   "background_color": "#00d8bb",
   "display": "standalone",
   "scope": "/",
-  "orientation": "any"
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/static/icons/my-coins.png",
+      "sizes": "512x512",
+			"type": "image/x-icon"
+    }
+  ]
 }
