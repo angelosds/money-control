@@ -1,0 +1,9 @@
+{
+  "name": "My coins",
+  "short_name": "MyCoins",
+  "theme_color": "#00d8bb",
+  "background_color": "#00d8bb",
+  "display": "standalone",
+  "scope": "/",
+  "orientation": "any"
+}
