@@ -11,7 +11,7 @@
       <li class="item">
         <a
           href="#"
-          class="nav-link -default">
+          class="nav-link -default -active">
           <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-card" /></svg>
         </a>
       </li>
@@ -77,6 +77,9 @@ export default {
     justify-content center
     display flex
 
+    > .icon
+      transition .2s fill linear
+
     &.-action
       height $action-size
       width $action-size
@@ -95,4 +98,8 @@ export default {
       > .icon
         width 24px
         fill $light
+
+      &.-active
+        > .icon
+          fill $primary
 </style>
