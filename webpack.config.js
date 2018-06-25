@@ -22,7 +22,7 @@ module.exports = {
         loader: 'vue-loader',
         options: {
           loaders: {
-            'styl': [
+            'stylus': [
               { loader: 'vue-style-loader' },
               { loader: 'css-loader' },
               {

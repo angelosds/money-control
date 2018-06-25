@@ -5,35 +5,35 @@
         <a
           href="#"
           class="nav-link -default">
-          A
+          <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-wallet" /></svg>
         </a>
       </li>
       <li class="item">
         <a
           href="#"
           class="nav-link -default">
-          A
+          <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-card" /></svg>
         </a>
       </li>
       <li class="item">
         <a
           href="#"
           class="nav-link -action">
-          A
+          <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-plus" /></svg>
         </a>
       </li>
       <li class="item">
         <a
           href="#"
           class="nav-link -default">
-          A
+          <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-account" /></svg>
         </a>
       </li>
       <li class="item">
         <a
           href="#"
           class="nav-link -default">
-          A
+          <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-settings" /></svg>
         </a>
       </li>
     </ul>
@@ -87,16 +87,12 @@ export default {
 
       > .icon
         width 35px
-
-        .line
-          fill $inverse
+        fill $inverse
 
     &.-default
       height $nav-height
 
       > .icon
         width 24px
-
-        .line
-          fill $light
+        fill $light
 </style>
