@@ -71,17 +71,17 @@ export default {
 <style lang="stylus">
   @import 'tools/*'
 
-  $nav-height = 70px
   $action-size = 70px
 
   .main-nav
     bottom 0
     left 0
     width 100%
-    height $nav-height
+    height $navigation-height
     background-color $inverse
-    box-shadow 0 0 120px 0 alpha($primary, 15%)
+    box-shadow 0 0 120px 0 alpha($light, 15%)
     position fixed
+    z-index 1000
 
     > .list
       padding 0
@@ -117,7 +117,7 @@ export default {
 
     &.-default
       width 100%
-      height $nav-height
+      height $navigation-height
 
       > .ripple
         background-color alpha($light, 20%)

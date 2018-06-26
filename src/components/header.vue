@@ -18,10 +18,16 @@ export default {
   @import 'tools/*'
 
   .main-header
-    padding-top 25px
+    top 0
+    left 0
+    width 100%
+    height $header-height
+    background-color alpha($inverse, 50%)
     align-items center
-    flex-direction column
+    justify-content center
     display flex
+    position fixed
+    z-index 1000
 
     > .title
       margin 0
