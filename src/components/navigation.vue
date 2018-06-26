@@ -1,46 +1,42 @@
 <template>
   <nav class="main-nav">
     <ul class="list">
-      <li
-        class="item"
-        @click="ripple">
+      <li class="item">
         <router-link
-          class="nav-link -default ripple-button"
+          v-ripple
+          class="nav-link -default ripple-item"
           to="/balance">
           <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-wallet" /></svg>
         </router-link>
       </li>
-      <li
-        class="item"
-        @click="ripple">
+      <li class="item">
         <router-link
-          class="nav-link -default ripple-button"
+          v-ripple
+          class="nav-link -default ripple-item"
           to="/cards">
           <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-card" /></svg>
         </router-link>
       </li>
       <li class="item">
         <a
+          v-ripple
           href="#"
-          class="nav-link -action ripple-button"
-          @click="ripple">
+          class="nav-link -action">
           <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-plus" /></svg>
         </a>
       </li>
-      <li
-        class="item"
-        @click="ripple">
+      <li class="item">
         <router-link
-          class="nav-link -default ripple-button"
+          v-ripple
+          class="nav-link -default ripple-item"
           to="/account">
           <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-account" /></svg>
         </router-link>
       </li>
-      <li
-        class="item"
-        @click="ripple">
+      <li class="item">
         <router-link
-          class="nav-link -default ripple-button"
+          v-ripple
+          class="nav-link -default ripple-item"
           to="/settings">
           <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-settings" /></svg>
         </router-link>
@@ -50,10 +46,10 @@
 </template>
 
 <script>
-import Ripple from '../mixins/ripple'
+import ripple from './ripple'
 
 export default {
-  mixins: [ Ripple ]
+  extends: ripple
 }
 </script>
 

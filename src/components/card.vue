@@ -1,10 +1,10 @@
 <template>
   <div>
     <a
+      v-ripple
       :class="'-color' + color"
       href="#"
-      class="card-info ripple-button"
-      @click="ripple">
+      class="card-info">
       <h1 class="title">{{ name }}</h1>
       <svg
         :class="'-' + type"
@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import Ripple from '../mixins/ripple'
+import ripple from './ripple'
 
 export default {
-  mixins: [ Ripple ],
+  extends: ripple,
   props: {
     name: {
       type: String,
