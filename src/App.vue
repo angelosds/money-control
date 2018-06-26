@@ -1,6 +1,7 @@
 <template>
   <div>
     <main-header :title="title" />
+    <router-view />
     <main-nav />
   </div>
 </template>

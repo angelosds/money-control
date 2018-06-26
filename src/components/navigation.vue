@@ -1,21 +1,23 @@
 <template>
   <nav class="main-nav">
     <ul class="list">
-      <li class="item">
-        <a
-          href="#"
+      <li
+        class="item"
+        @click="click">
+        <router-link
           class="nav-link -default ripple-button"
-          @click="click">
+          to="/balance">
           <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-wallet" /></svg>
-        </a>
+        </router-link>
       </li>
-      <li class="item">
-        <a
-          href="#"
-          class="nav-link -default -active ripple-button"
-          @click="click">
+      <li
+        class="item"
+        @click="click">
+        <router-link
+          class="nav-link -default ripple-button"
+          to="/cards">
           <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-card" /></svg>
-        </a>
+        </router-link>
       </li>
       <li class="item">
         <a
@@ -25,21 +27,23 @@
           <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-plus" /></svg>
         </a>
       </li>
-      <li class="item">
-        <a
-          href="#"
+      <li
+        class="item"
+        @click="click">
+        <router-link
           class="nav-link -default ripple-button"
-          @click="click">
+          to="/account">
           <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-account" /></svg>
-        </a>
+        </router-link>
       </li>
-      <li class="item">
-        <a
-          href="#"
+      <li
+        class="item"
+        @click="click">
+        <router-link
           class="nav-link -default ripple-button"
-          @click="click">
+          to="/settings">
           <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-settings" /></svg>
-        </a>
+        </router-link>
       </li>
     </ul>
   </nav>
