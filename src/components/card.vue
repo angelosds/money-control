@@ -3,7 +3,8 @@
     <a
       :class="'-color' + color"
       href="#"
-      class="card-info ripple-button">
+      class="card-info ripple-button"
+      @click="ripple">
       <h1 class="title">{{ name }}</h1>
       <svg
         :class="'-' + type"
@@ -13,7 +14,10 @@
 </template>
 
 <script>
+import Ripple from '../mixins/ripple'
+
 export default {
+  mixins: [ Ripple ],
   props: {
     name: {
       type: String,
@@ -46,6 +50,9 @@ export default {
   display block
   position relative
   overflow hidden
+
+  > .ripple
+    background-color alpha($inverse, 40%)
 
   &:before
   &:after

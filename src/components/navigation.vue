@@ -3,7 +3,7 @@
     <ul class="list">
       <li
         class="item"
-        @click="click">
+        @click="ripple">
         <router-link
           class="nav-link -default ripple-button"
           to="/balance">
@@ -12,7 +12,7 @@
       </li>
       <li
         class="item"
-        @click="click">
+        @click="ripple">
         <router-link
           class="nav-link -default ripple-button"
           to="/cards">
@@ -23,13 +23,13 @@
         <a
           href="#"
           class="nav-link -action ripple-button"
-          @click="click">
+          @click="ripple">
           <svg class="icon"><use xlink:href="./static/images/icons.svg#icon-plus" /></svg>
         </a>
       </li>
       <li
         class="item"
-        @click="click">
+        @click="ripple">
         <router-link
           class="nav-link -default ripple-button"
           to="/account">
@@ -38,7 +38,7 @@
       </li>
       <li
         class="item"
-        @click="click">
+        @click="ripple">
         <router-link
           class="nav-link -default ripple-button"
           to="/settings">
@@ -50,21 +50,10 @@
 </template>
 
 <script>
+import Ripple from '../mixins/ripple'
+
 export default {
-  methods: {
-    click(e) {
-      const el = e.srcElement;
-      const ripple = document.createElement('span');
-
-      el.appendChild(ripple);
-
-      ripple.classList.add('ripple');
-      ripple.style.top = `calc(${e.offsetY}px - ${ripple.offsetHeight / 2}px)`;
-      ripple.style.left = `calc(${e.offsetX}px - ${ripple.offsetWidth / 2}px)`;
-
-      setTimeout(() => ripple.remove(), 600);
-    }
-  }
+  mixins: [ Ripple ]
 }
 </script>
 
